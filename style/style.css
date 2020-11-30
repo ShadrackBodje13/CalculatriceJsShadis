@@ -1,0 +1,95 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+   
+}
+
+#app {
+   position:fixed;
+   top:0;
+   bottom:0;
+   left:0;
+   right:0;
+}
+
+#ecran {
+   height:35%;
+   background-color:#fff;
+   text-align:right;
+   padding-right:10px;
+}
+
+.saisie {
+   height:55px;
+   font-size:55px;
+   font-weight:500;
+   color:#757575;
+   padding-top:20px;
+}
+
+.resultat {
+   font-size:35px;
+   font-weight:500;
+   color:#939393;
+   padding-top:15px;
+}
+
+.erreur {
+   color:#F40056;
+}
+
+#touches {
+   display:flex;
+   height:65%;
+   color:#fff;
+   
+}
+
+#operation {
+   width:25%;
+   background-color:#636363;
+   font-size:17px;
+}
+
+#operation p {
+   position:relative;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   height:20%;
+}
+
+#chiffres {
+   display:flex;
+   flex-direction: column;
+   background-color:#434343;
+   font-size:22px;
+   width:75%;
+}
+
+#chiffres div {
+   display:flex;
+   height:25%;
+}
+
+#chiffres div p {
+   position:relative;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:33.33%;
+}
+
+#touches p:hover::after {
+   content:"";
+   position:absolute;
+   top:50%;left:50%;
+   transform:translate(-50%,-50%);
+   width:40px;
+   height:40px;
+   background-color:rgba(255,255,255,0.1);
+   border-radius:50%;
+}
